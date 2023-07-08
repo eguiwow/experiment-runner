@@ -5,6 +5,7 @@ examples/linux-powerjoular-profiling/primer
 **/__pycache__/
 **/experiments/
 **/results/
+*/other_RunnerConfigs_ander/
 */.DS_Store
 .DS_Store
 .vscode
