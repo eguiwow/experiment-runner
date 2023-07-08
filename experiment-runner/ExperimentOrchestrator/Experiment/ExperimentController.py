@@ -1,5 +1,6 @@
 import time
 import multiprocessing
+import datetime
 
 from ConfigValidator.Config.Models.Metadata import Metadata
 from ConfigValidator.CustomErrors.BaseError import BaseError
@@ -133,7 +134,7 @@ class ExperimentController:
 
             time_btwn_runs = self.config.time_between_runs_in_ms
             if time_btwn_runs > 0:
-                output.console_log_bold(f"Run fully ended, waiting for: {time_btwn_runs}ms == {time_btwn_runs / 1000}s")
+                output.console_log_bold(f"Run fully ended, waiting for: {time_btwn_runs}ms == {time_btwn_runs / 1000}s. [{datetime.datetime.now()}]")
                 time.sleep(time_btwn_runs / 1000)
 
             if self.config.operation_type is OperationType.SEMI:

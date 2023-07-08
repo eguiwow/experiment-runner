@@ -1,0 +1,191 @@
+[def-tts-GL6] New experiment started from scratch at 2023-06-25 17:17:13.007936.
+[def-tts-GL6] New experiment started from scratch at 2023-06-25 17:19:10.663767.
+[def-tts-GL6] New experiment started from scratch at 2023-06-25 17:24:57.203907.
+[r1-20230625-172801] [50] OK 
+[r1-20230625-174657] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-25 18:07:13.093082.
+[r1-20230625-181021] [75] OK 
+[r1-20230625-183017] [100] OK 
+[r2-20230625-185014] [50] OK 
+[r2-20230625-190908] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 11:00:52.817470.
+[r2-20230626-110358] [100] OK 
+[r3-20230626-112342] [50] OK 
+[r3-20230626-114326] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 12:29:13.638251.
+[r3-20230626-123218] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-26 12:32:27.231900.
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 12:38:05.114877.
+[r1-20230626-124109] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 12:48:08.497397.
+[r1-20230626-125113] [50] OK 
+[r1-20230626-131000] [75] OK 
+[r1-20230626-132850] [100] OK 
+[r2-20230626-134737] [50] OK 
+[r2-20230626-141038] [75] OK 
+[r2-20230626-142902] [100] OK 
+[r3-20230626-144753] [50] OK 
+[r3-20230626-150640] [75] OK 
+[r3-20230626-152557] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-26 15:41:42.434460.
+[tts-stressing] New experiment started from scratch at 2023-06-26 16:14:26.628203.
+[tts-stressing] Experiment completed at 2023-06-26 16:17:47.631168.
+[tts-stressing] New experiment started from scratch at 2023-06-26 16:20:30.889226.
+[tts-stressing] Experiment completed at 2023-06-26 16:23:51.977104.
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 17:01:53.660880.
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 17:04:30.740048.
+[r1-20230626-170735] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 17:19:18.238271.
+[r1-20230626-172223] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 17:29:28.267474.
+[r1-20230626-173233] [50] OK 
+[r1-20230626-175404] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-26 23:57:54.859948.
+[r1-20230627-000100] [100] OK 
+[r2-20230627-000934] [50] OK 
+[r2-20230627-001809] [75] OK 
+[r2-20230627-005156] [100] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-27 09:04:54.011767.
+[def-tts-GL6] New experiment started from scratch at 2023-06-27 09:07:42.047419.
+[r1-20230627-091047] [50] OK 
+[r1-20230627-091924] [75] OK 
+[r1-20230627-095355] [100] OK 
+[r2-20230627-103231] [50] OK 
+[r2-20230627-104105] [75] OK 
+[r2-20230627-111128] [100] OK 
+[r3-20230627-114851] [50] OK 
+[r3-20230627-121253] [75] OK 
+[r3-20230627-124530] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-27 13:18:25.441388.
+[def-tts-GL6] New experiment started from scratch at 2023-06-28 00:12:09.486536.
+[r1-20230628-001514] [50] OK 
+[r1-20230628-004725] [75] OK 
+[r1-20230628-012634] [100] OK 
+[r2-20230628-020716] [50] OK 
+[r2-20230628-024016] [75] OK 
+[r2-20230628-031933] [100] OK 
+[r3-20230628-040015] [50] OK 
+[r3-20230628-043257] [75] OK 
+[r3-20230628-051222] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-28 05:50:34.168221.
+[def-tts-GL6] New experiment started from scratch at 2023-06-28 08:38:07.287749.
+[r1-20230628-084112] [50] OK 
+[r1-20230628-092202] [75] OK 
+[r1-20230628-100310] [100] OK 
+[r2-20230628-104627] [50] OK 
+[r2-20230628-112708] [75] OK 
+[r2-20230628-120857] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-28 12:48:14.092427.
+[def-tts-GL6] New experiment started from scratch at 2023-06-28 13:32:35.773600.
+[r1-20230628-133540] [50] OK 
+[r1-20230628-135624] [75] OK 
+[r1-20230628-143910] [100] OK 
+[r2-20230628-152308] [50] OK 
+[r2-20230628-160537] [75] OK 
+[r2-20230628-165031] [100] OK 
+[def-tts-GL6] Experiment completed at 2023-06-28 17:30:05.114859.
+[def-tts-GL6] New experiment started from scratch at 2023-06-29 20:36:21.496421.
+[r1-20230629-203936] [50] RITTAL FAILED at 2023-06-29 20:39:36.311225
+[r1-20230629-205118] [75] FAILED at 2023-06-29 20:51:18.296392
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 01:07:15.706476.
+[r1-20230630-011323] [50] FAILED at 2023-06-30 01:13:23.364920
+[r1-20230630-013101] [75] FAILED at 2023-06-30 01:31:01.484130
+[def-tts-GL6] Experiment completed at 2023-06-30 02:03:42.302766.
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 14:07:15.163447.
+[r1-20230630-141030] [50] RITTAL FAILED at 2023-06-30 14:10:30.014029
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 14:29:24.484627.
+[r1-20230630-143239] [50] RITTAL FAILED at 2023-06-30 14:32:39.850583
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 14:34:05.569751.
+[r1-20230630-143722] [50] RITTAL FAILED at 2023-06-30 14:37:22.191040
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 14:42:27.467526.
+[r1-20230630-144543] [50] RITTAL FAILED at 2023-06-30 14:45:43.011842
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 14:56:35.045076.
+[r1-20230630-145950] [50] RITTAL FAILED at 2023-06-30 14:59:50.721637
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 15:02:43.132986.
+[r1-20230630-150559] [50] OK 
+[r1-20230630-150635] [50] FAILED during K6-test 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 15:11:44.562537.
+[r1-20230630-151502] [50] OK 
+[r1-20230630-154135] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 15:46:43.226650.
+[r1-20230630-155001] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 15:51:39.574823.
+[r1-20230630-155458] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 15:59:34.429856.
+[r1-20230630-160252] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 16:03:43.748270.
+[r1-20230630-160703] [50] OK 
+[r1-20230630-163304] [75] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 19:34:00.808673.
+[r1-20230630-193719] [50] OK 
+[def-tts-GL6] New experiment started from scratch at 2023-06-30 22:06:18.286575
+[r1] [50] RITTAL FAILED at 2023-06-30 22:09:38.275174
+[r1-20230630-221834] [75] OK
+[r1-20230630-230016] [100] OK
+[r2-20230630-234203] [50] OK
+[r2-20230701-002043] [75] OK
+[r2-20230701-010216] [100] OK
+[r3-20230701-014408] [50] OK
+[r3-20230701-022417] [75] OK
+[r3-20230701-030500] [100] OK
+[r4-20230701-034716] [50] OK
+[r4-20230701-042700] [75] OK
+[r4-20230701-050843] [100] OK
+[r5-20230701-055209] [50] OK
+[r5-20230701-063256] [75] OK
+[r5-20230701-071332] [100] OK
+[r6-20230701-075536] [50] OK
+[r6-20230701-083525] [75] OK
+[r6-20230701-091634] [100] OK
+[r7-20230701-095810] [50] OK
+[r7-20230701-103743] [75] OK
+[r7-20230701-111836] [100] OK
+[r8-20230701-120135] [50] OK
+[r8-20230701-124100] [75] OK
+[r8-20230701-132205] [100] OK
+[r9-20230701-140529] [50] OK
+[r9-20230701-144336] [75] OK
+[r9-20230701-152421] [100] OK
+[r10-20230701-160645] [50] OK
+[r10-20230701-164645] [75] OK
+[r10-20230701-172840] [100] OK
+[def-tts-GL6] New experiment started from scratch at 2023-07-01 18:30:00.598365
+[def-stress-ng-GL6] New experiment started from scratch at 2023-07-06 11:40:05.780420
+[r1-20230706-114023] [50] OK
+[r1-20230706-120043] [75] OK
+[r1-20230706-122103] [100] OK
+[r2-20230706-124122] [50] OK
+[r2-20230706-130141] [75] OK
+[r2-20230706-132201] [100] OK
+[r3-20230706-134220] [50] OK
+[r3-20230706-140240] [75] OK
+[r3-20230706-142300] [100] OK
+[r4-20230706-144320] [50] OK
+[r4-20230706-150340] [75] OK
+[r4-20230706-152400] [100] OK
+[r5-20230706-154420] [50] OK
+[r5-20230706-160440] [75] OK
+[r5-20230706-162500] [100] OK
+[r6-20230706-164519] [50] OK
+[r6-20230706-170540] [75] OK
+[r6-20230706-172600] [100] OK
+[r7-20230706-174619] [50] OK
+[r7-20230706-180639] [75] OK
+[r7-20230706-182659] [100] OK
+[r8-20230706-184717] [50] OK
+[r8-20230706-190737] [75] OK
+[r8-20230706-192757] [100] OK
+[r9-20230706-194816] [50] OK
+[r9-20230706-200837] [75] OK
+[r9-20230706-202857] [100] OK
+[r10-20230706-204916] [50] OK
+[r10-20230706-210936] [75] OK
+[r10-20230706-212956] [100] OK
+[def-stress-ng-GL6] Experiment completed at 2023-07-06 21:51:07.454725
+[def-stress-ng-GL6] New experiment started from scratch at 2023-07-07 12:34:52.507690
+[r1-20230707-123510] [0] OK
+[r2-20230707-125531] [0] OK
+[r3-20230707-131551] [0] OK
+[r4-20230707-133612] [0] OK
+[r5-20230707-135634] [0] OK
+[def-stress-ng-GL6] Experiment completed at 2023-07-07 14:17:44.839246
