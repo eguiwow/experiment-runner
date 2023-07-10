@@ -77,6 +77,7 @@ class RunnerConfig:
     # GL specific
     VUs_dict:                   Dict            = {'50': '500', '75': '750', '100': '1500' }
     wait_time:                  int             = 3 * 60
+    local_stressing:            bool            = False
     # Testing mode
     testing:                    bool            = False
 
@@ -124,13 +125,22 @@ class RunnerConfig:
         ################################################## BEFORE_EXPERIMENT
         os.environ.update() # For the environment variables to be loaded
         execute_local_command(f"cd {self.ROOT_DIR} && mkdir -p results/energy", True)
-        # Improve K6's performance on local machine
-        local_pass = os.getenv("PASS_U")
-        execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.ip_local_port_range=\"1024 65535\"", True)
-        execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.tcp_tw_reuse=1", True)
-        execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.tcp_timestamps=1", True)
-        execute_local_command("ulimit -n 250000", True)
-
+        # Improve K6's performance 
+        # on local machine
+        if self.local_stressing:
+            local_pass = os.getenv("PASS_U")
+            execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.ip_local_port_range=\"1024 65535\"", True)
+            execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.tcp_tw_reuse=1", True)
+            execute_local_command(f"echo {local_pass} | sudo -S sysctl -w net.ipv4.tcp_timestamps=1", True)
+            execute_local_command("ulimit -n 250000", True)
+        # on other SUT
+        else:
+            con_other_SUT = ConnectionHandler("GL6")
+            _, _, passOther = con_other_SUT.get_credentials()
+            con_other_SUT.execute_remote_command(f"echo {passOther} | sudo -S sysctl -w net.ipv4.ip_local_port_range=\"1024 65535\"", "Upgrades1")
+            con_other_SUT.execute_remote_command(f"echo {passOther} | sudo -S sysctl -w net.ipv4.tcp_tw_reuse=1", "Upgrades2")
+            con_other_SUT.execute_remote_command(f"echo {passOther} | sudo -S sysctl -w net.ipv4.tcp_timestamps=1", "Upgrades3")
+            con_other_SUT.execute_remote_command("ulimit -n 250000", "Upgrades4")
         write_to_log(f"[{self.name}] New experiment started from scratch", self.SUT, True)
 
     def before_run(self) -> None:
@@ -232,13 +242,15 @@ class RunnerConfig:
         timestamp_ini = time.time()
         workload = context.run_variation['workload']
         output.console_log(f"Load testing with K6 - CPU%:{workload}; VUs: {self.VUs_dict[workload]}") 
-        VUs_divided_2 = int(self.VUs_dict[workload])//2
-        # we prepare the tests with the corresponding IPs
-        self.con_LOG.execute_remote_command(f'tmux new -s tests -d \'for i in $(ls /home/ander/k6-tests/k6-test-{self.SUT}); do k6 run - </home/ander/k6-tests/k6-test-{self.SUT}/$i/script.js --vus {VUs_divided_2} --duration 20s ; done", f"Execute K6 tests from {self.LOGGING_GL}\'', "K6 tests on LOGGING server")
-        os.system(f"for i in $(ls ~/THESIS/k6-tests/k6-test-{self.SUT}); "
-                f"do k6 run - <~/THESIS/k6-tests/k6-test-{self.SUT}/$i/script.js --vus {VUs_divided_2} --duration 20s ; done") 
-        self.con_LOG.execute_remote_command(f"tmux kill-session -t tests", "Kill tmux tests from LOGGING_GL")
-        output.console_log('Finished load testing')
+        if self.local_stressing:
+            os.system(f"for i in $(ls ~/THESIS/k6-tests/k6-test-{self.SUT}); "
+                    f"do k6 run - <~/THESIS/k6-tests/k6-test-{self.SUT}/$i/script.js --vus {self.VUs_dict[workload]} --duration 20s ; done") 
+        # from other SUT
+        else:
+            con_other_SUT = ConnectionHandler("GL6")    
+            con_other_SUT.execute_remote_command(f"for i in $(ls ~/k6-tests/k6-test-{self.SUT});" 
+                f"do k6 run - <~/k6-tests/k6-test-{self.SUT}/$i/script.js --vus {self.VUs_dict[workload]} --duration 20s ;done", "Load testing from GL5")               
+            output.console_log('Finished load testing')
         if time.time() - timestamp_ini < 120:
             print(time.time() - timestamp_ini)
             self.discard_run = True
